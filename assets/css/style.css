@@ -153,6 +153,15 @@ h1,h2,h3,h4{font-family:var(--serif);color:var(--ink);line-height:1.18;font-weig
   position:absolute;inset:auto;top:24px;left:24px;width:330px;height:410px;
   border:2px solid var(--gold-soft);border-radius:18px;z-index:1;opacity:.6
 }
+.hero__quote{
+  position:relative;z-index:2;width:330px;margin:28px auto 0;padding:0;
+  border:0;font-family:var(--serif);font-style:italic;font-weight:500;
+  font-size:15px;line-height:1.55;text-align:center;color:rgba(255,255,255,.82);
+}
+.hero__quote::before{
+  content:"";display:block;width:34px;height:2px;background:var(--gold-soft);
+  margin:0 auto 14px;opacity:.8;
+}
 .hero__badge{
   position:absolute;z-index:3;bottom:-22px;left:-26px;
   background:#fff;color:var(--ink);border-radius:14px;padding:16px 20px;
